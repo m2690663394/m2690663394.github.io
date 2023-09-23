@@ -1,0 +1,63 @@
+.img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 50%;
+   }
+
+   .rainbow-text {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 8s ease infinite;
+  }
+
+  .animation {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .animation--clockwise {
+    -webkit-animation: clockwise 30s linear infinite normal;
+    animation: clockwise 30s linear infinite normal;
+  }
+  
+  .animation--anti-clockwise {
+    -webkit-animation: anti-clockwise 30s linear infinite normal;
+    animation: anti-clockwise 30s linear infinite normal;
+  }
+  
+  .animation--rotating {
+    -webkit-animation: rotating 15s linear infinite normal;
+    animation: rotating 15s linear infinite normal;
+  }
+  
+  .animation--rotating-diagonal {
+    -webkit-animation: rotating-diagonal 15s linear infinite alternate;
+    animation: rotating-diagonal 15s linear infinite alternate;
+  }
+  
+  .animation--rotating-clockwise {
+    -webkit-animation: rotating-clockwise 15s linear infinite normal;
+    animation: rotating-clockwise 15s linear infinite normal;
+  }
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
